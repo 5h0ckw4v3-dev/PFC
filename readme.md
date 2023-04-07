@@ -1,6 +1,6 @@
-##Proyecto de fin de ciclo de ASIR
+## Proyecto de fin de ciclo de ASIR
 
-###Consiste en un script realizado en bash para realizar tareas comunes y de seguridad.
+### Script realizado en bash para realizar tareas comunes y de seguridad.
 
 Menú principal:
 
@@ -14,6 +14,7 @@ Menú principal:
 8. Sistema
 
 --------------------------------------
+### Los diferentes submenus constan de las siguientes opciones.
 
 Instalar y configurar SAMBA
 1. Instalacion.
