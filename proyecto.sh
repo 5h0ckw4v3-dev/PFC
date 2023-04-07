@@ -167,10 +167,10 @@ echo "    \_/\_/  |_____|____/  ";
 echo " "
 echo " "
 echo "¿Que deseas hacer?"
-echo 1. "Instalar Apache"
-echo 2. "Instalar PHP, MariaDB"
-echo 3. "Instalar Wordpress (Necesario paso 1 y 2)"
-echo 0. "Inicio"
+echo 1. Instalar Apache.
+echo 2. Instalar PHP, MariaDB.
+echo 3. Instalar Wordpress (Necesario paso 1 y 2).
+echo 0. Inicio.
 echo -n "Elige una opción: "
 echo " "
 read webopt
@@ -405,12 +405,12 @@ echo " | |\  | |___  | |   \ V  V /| |_| |  _ <| . \  ";
 echo " |_| \_|_____| |_|    \_/\_/  \___/|_| \_\_|\_\ ";
 echo " "
 echo " "
-echo ¿Que deseas hacer?;
-echo 1. Ver estado actual;
-echo 2. Ver IP;
-echo 3. Reiniciar servidor;
-echo 0. Inicio;
-echo -n "Elige una opcion:";
+echo "¿Que deseas hacer?"
+echo 1. Ver estado actual.
+echo 2. Ver IP.
+echo 3. Reiniciar servidor.
+echo 0. Inicio.
+echo -n "Elige una opcion:"
 echo " "
 read optnet;
 case $optnet in
@@ -452,14 +452,14 @@ echo "  ___) | |__| |___| |_| |  _ < | |  | |   | |   ";
 echo " |____/|_____\____|\___/|_| \_\___| |_|   |_|   ";
 echo " "
 echo " "
-echo 1. Desactivar puertos USB
-echo 2. Activar puertos USB
-echo 3. Bloquear usuario root de SSH
-echo 4. Deshabilitar contraseñas vacias SSH
-echo 5. Deshabilitar IPv6
-echo 6. Deshabilitar reinicio usando Ctrl+Alt+Supr
-echo 7. Verificar puertos abiertos
-echo 0. Inicio
+echo 1. Desactivar puertos USB.
+echo 2. Activar puertos USB.
+echo 3. Bloquear usuario root de SSH.
+echo 4. Deshabilitar contraseñas vacias SSH.
+echo 5. Deshabilitar IPv6.
+echo 6. Deshabilitar reinicio usando Ctrl+Alt+Supr.
+echo 7. Verificar puertos abiertos.
+echo 0. Inicio.
 echo -n "Elige una opcion: "
 echo " "
 read optsec
@@ -542,9 +542,9 @@ echo "  / ___ \|  __/|  __/ ___) |";
 echo " /_/   \_\_|   |_|   |____/ ";
 echo " "
 echo " "
-echo 1. Actualiza repositorios
-echo 2. Actualiza paquetes
-echo 3. Eliminar paquetes obsoletos
+echo 1. Actualiza repositorios.
+echo 2. Actualiza paquetes.
+echo 3. Eliminar paquetes obsoletos.
 echo 4. Instalar LibreOffice.
 echo 5. Instalar VLC.
 echo 6. Instalar Thunderbird.
@@ -627,7 +627,7 @@ echo " |____/ |_| |____/ |_| |_____|_|  |_| ";
 echo " "
 echo " "
 echo 1. Ver propiedades del sistema.
-echo 0. Inicio
+echo 0. Inicio.
 echo -n "Elige una opcion: "
 echo " "
 read optsys
