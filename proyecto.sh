@@ -1,6 +1,8 @@
 #!/bin/bash
 clear
 Inicio() {
+while true
+do
 clear
 echo " ____  _____ ____      _    ____ ___ ____ ";
 echo "|  _ \|  ___/ ___|    / \  / ___|_ _|  _ \ ";
@@ -36,7 +38,9 @@ case $opcion in
 7) APPS;;
 8) SYS;;
 0) break;;
+*) echo "Opción inválida."Presiona Enter para volver al menú..."
 esac
+done
 }
 ##########################SAMBA#########################################################################
 SAMBA() {
