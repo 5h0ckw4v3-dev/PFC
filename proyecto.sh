@@ -38,7 +38,6 @@ case $opcion in
 7) APPS;;
 8) SYS;;
 0) break;;
-*) echo "Opción inválida."Presiona Enter para volver al menú..."
 esac
 done
 }
