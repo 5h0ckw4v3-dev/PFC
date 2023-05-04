@@ -69,8 +69,8 @@ sudo apt update && sudo apt install -y samba samba-common samba-common-bin smbcl
 clear
 echo " "
 echo "Samba habilitado al inicio"
-sudo systemctl start smb
-sudo systemctl enable smb
+sudo systemctl enable smbd
+sudo systemctl start smbd
 echo " "
 echo "Fin instalación samba"
 echo " "
@@ -172,7 +172,7 @@ echo " "
 echo "¿Que deseas hacer?"
 echo 1. Instalar Apache.
 echo 2. Instalar PHP, MariaDB.
-echo 3. Instalar Wordpress (Necesario paso 1 y 2).
+echo 3. Instalar Wordpress.
 echo 0. Inicio.
 echo -n "Elige una opción: "
 echo " "
@@ -411,7 +411,7 @@ echo " "
 echo "¿Que deseas hacer?"
 echo 1. Ver estado actual.
 echo 2. Ver IP.
-echo 3. Reiniciar servidor.
+echo 3. Reiniciar servicio de red.
 echo 0. Inicio.
 echo -n "Elige una opcion:"
 echo " "
@@ -427,14 +427,14 @@ ip a | grep $ipinterface | awk '{print $2}'
 echo " ";
 read -n 1 -s -r -p "Presiona Enter para volver al menú..."
 ;;
-3) echo -n "Se va a reiniciar el servidor, ¿quieres continuar? (y/n). "
+3) echo -n "Se va a reiniciar el servicio de red, ¿quieres continuar? (y/n). "
 read reiniciaryn
 if [ $reiniciaryn = y ] 
 then
 sudo nmcli networking off && nmcli networking on
-echo Servidor reiniciado.
+echo Servicio de red reiniciado.
 else
-echo En otro momento :D
+echo De acuerdo, lo dejamos para otro momento.
 fi
 echo " ";
 read -n 1 -s -r -p "Presiona Enter para volver al menú..."
