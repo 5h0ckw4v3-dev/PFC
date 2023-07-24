@@ -1,4 +1,4 @@
-Operaciones de Archivos:
+**Operaciones de Archivos:**
 
 | Comando                          | Descripción                                                                                                                |   
 |:---------------------------------|:---------------------------------------------------------------------------------------------------------------------------|
@@ -26,7 +26,7 @@ Operaciones de Archivos:
 
 
 
-Operaciones de Procesos:
+**Operaciones de Procesos:**
 
 | Comando                          | Descripción                                                                                                                |   
 |:---------------------------------|:---------------------------------------------------------------------------------------------------------------------------|
@@ -44,7 +44,7 @@ Operaciones de Procesos:
 
 
 
-Permisos de Archivos:
+**Permisos de Archivos:**
 
 | Comando                                                   | Descripción                                                                                              |   
 |:----------------------------------------------------------|:---------------------------------------------------------------------------------------------------------|
@@ -54,136 +54,191 @@ Permisos de Archivos:
 | chgrp nombredelgrupo nombredelarchivo                     |  Cambia el grupo propietario del archivo                                                                 |
 
 
-Redes:
 
-ping host: Realiza un ping a un host y muestra los resultados.
-whois dominio: Obtiene información whois para un dominio.
-dig dominio: Obtiene información DNS para un dominio.
-netstat -pnltu: Muestra información relacionada con la red, como conexiones de red, tablas de enrutamiento, estadísticas de interfaz, etc.
-ifconfig: Muestra las direcciones IP de todas las interfaces de red.
-ssh usuario@host: Inicio de sesión remoto en el host como usuario.
-scp: Transfiere archivos entre hosts a través de ssh.
-wget url: Descarga archivos desde la web.
-curl url: Envía una solicitud a una URL y devuelve la respuesta.
-traceroute dominio: Muestra la ruta que sigue un paquete para llegar al dominio.
-mtr dominio: mtr combina la funcionalidad de los programas traceroute y ping en una sola herramienta de diagnóstico de red.
-ss: Otra utilidad para investigar sockets. Es una alternativa más moderna a netstat.
-nmap: Herramienta de exploración de redes y escaneo de seguridad.
+**Redes:**
 
-
-Compresión y Archivos:
-
-tar cf archivo.tar archivos: Crea un archivo tar llamado archivo.tar que contiene los archivos especificados.
-tar xf archivo.tar: Extrae los archivos de archivo.tar.
-gzip archivo: Comprime el archivo y lo renombra a archivo.gz.
-gzip -d archivo.gz: Descomprime archivo.gz y lo restaura al archivo original.
-zip -r archivo.zip archivos: Crea un archivo zip llamado archivo.zip que contiene los archivos especificados.
-unzip archivo.zip: Extrae el contenido de un archivo zip.
+| Comando                                                   | Descripción                                                                                                               |   
+|:----------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------|
+| ping host                                                 | Realiza un ping a un host y muestra los resultados                                                                        |
+| whois dominio                                             | Obtiene información whois para un dominio                                                                                 |
+| dig dominio                                               | Obtiene información DNS para un dominio                                                                                   |
+| netstat -pnltu                                            | Muestra información relacionada con la red, como conexiones de red, tablas de enrutamiento, estadísticas de interfaz, etc |
+| ifconfig                                                  | Muestra las direcciones IP de todas las interfaces de red                                                                 |
+| ssh usuario@host                                          | Inicio de sesión remoto en el host como usuario                                                                           |
+| scp                                                       | Transfiere archivos entre hosts a través de ssh                                                                           |
+| wget url                                                  | Descarga archivos desde la web                                                                                            |
+| curl url                                                  | Envía una solicitud a una URL y devuelve la respuesta                                                                     |
+| traceroute dominio                                        | mtr combina la funcionalidad de los programas traceroute y ping en una sola herramienta de diagnóstico de red             |
+| mtr dominio                                               | Cambia el propietario y el grupo del archivo                                                                              |
+| ss                                                        |  Otra utilidad para investigar sockets. Es una alternativa más moderna a netstat                                          |
+| nmap                                                      | Herramienta de exploración de redes y escaneo de seguridad                                                                |
 
 
-Procesamiento de Texto:
 
-grep patrón archivos: Busca un patrón en los archivos.
-grep -r patrón directorio: Busca de forma recursiva un patrón en un directorio.
-comando | grep patrón: Envia la salida del comando a grep para buscar.
-echo 'texto': Imprime texto.
-sed 's/cadena1/cadena2/g' nombredelarchivo: Reemplaza cadena1 con cadena2 en el archivo.
-diff archivo1 archivo2: Compara dos archivos y muestra las diferencias.
-wc nombredelarchivo: Cuenta líneas, palabras y caracteres en un archivo.
-awk: Un lenguaje de programación versátil para trabajar con archivos.
-Por: Waleed Mousa
+**Compresión y Archivos:**
 
-Uso del Disco:
-
-df: Muestra el uso del disco.
-du: Muestra el uso del espacio en directorios.
-free: Muestra el uso de memoria y swap.
-whereis aplicación: Muestra las posibles ubicaciones de una aplicación.
+| Comando                                                   | Descripción                                                                                                               |   
+|:----------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------|
+| tar cf archivo.tar archivos                               | Crea un archivo tar llamado archivo.tar que contiene los archivos especificados                                           |
+| tar xf archivo.tar                                        | Extrae los archivos de archivo.tar                                                                                        |
+| gzip archivo                                              | Comprime el archivo y lo renombra a archivo.gz                                                                            |
+| gzip -d archivo.gz                                        | Descomprime archivo.gz y lo restaura al archivo original                                                                  |
+| zip -r archivo.zip archivos                               | Crea un archivo zip llamado archivo.zip que contiene los archivos especificados                                           |
+| unzip archivo.zip                                         | Extrae el contenido de un archivo zip                                                                                     |
+| tar -cvf archiv.tar directorio/                           | Crea un archivo tar                                                                                                       |
+| tar -xvf archiv.tar                                       | Extrae un archivo tar                                                                                                     |
+| tar -jcvf archiv.tar.bz2 directorio/                      | Crea un archivo bz2 comprimido                                                                                            | 
+| tar -jxvf archiv.tar.bz2                                  | Extrae un archivo bz2 comprimido                                                                                          |
 
 
-Información del Sistema:
 
-date: Muestra la fecha y hora actual.
-cal: Muestra el calendario del mes actual.
-uptime: Muestra el tiempo de actividad actual.
-w: Muestra quién está en línea.
-whoami: Muestra el nombre del usuario actual.
-uname -a: Muestra información del kernel.
-df -h: Uso del disco en formato legible para humanos.
-du -sh: Uso del disco del directorio actual en formato legible para humanos.
-free -m: Muestra la memoria libre y utilizada en MB.
-Por: Waleed Mousa
+**Procesamiento de Texto:**
 
-
-Otros (principalmente utilizados en scripts):
-
-comando1 ; comando2: Ejecuta comando1 y luego comando2.
-comando1 && comando2: Ejecuta comando2 solo si comando1 es exitoso.
-comando1 || comando2: Ejecuta comando2 solo si comando1 no es exitoso.
-comando &: Ejecuta el comando en segundo plano.
+| Comando                                                   | Descripción                                                                                                               |   
+|:----------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------|
+| grep patrón archivos                                      | Busca un patrón en los archivos                                                                                           |
+| grep -r patrón directorio                                 | Busca de forma recursiva un patrón en un directorio                                                                       |
+| comando | grep patrón                                     | Envia la salida del comando a grep para buscar                                                                            |
+| echo 'texto'                                              | Imprime texto                                                                                                             |
+| sed 's/cadena1/cadena2/g' nombredelarchivo                | Reemplaza cadena1 con cadena2 en el archivo                                                                               |
+| diff archivo1 archivo2                                    | Compara dos archivos y muestra las diferencias                                                                            |
+| wc nombredelarchivo                                       | Cuenta líneas, palabras y caracteres en un archivo                                                                        |
+| awk                                                       | Un lenguaje de programación versátil para trabajar con archivos                                                           |
 
 
-Variables de Entorno:
 
-env: Muestra todas las variables de entorno.
-echo $VARIABLE: Muestra el valor de una variable de entorno.
-export VARIABLE=valor: Establece el valor de una variable de entorno.
-alias nuevo_comando='viejo_comando opciones': Crea un nuevo comando que ejecuta el viejo comando con las opciones especificadas.
-echo $PATH: Imprime la variable de entorno PATH.
-export PATH=$PATH:/nueva/ruta: Agrega /nueva/ruta a la variable de entorno PATH.
+**Uso del Disco:**
 
-
-Programación de Tareas (Cron Jobs):
-
-crontab -l: Lista todas tus tareas cron.
-crontab -e: Edita tus tareas cron.
-crontab -r: Elimina todas tus tareas cron.
-crontab -v: Muestra la última vez que editaste tus tareas cron.
-crontab archivo: Instala una tarea cron desde un archivo.
-@reboot comando: Programa una tarea para que se ejecute al inicio.
+| Comando                                                   | Descripción                                                                                                               |   
+|:----------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------|
+| df                                                        | Muestra el uso del disco                                                                                                  |
+| du                                                        | Muestra el uso del espacio en directorios                                                                                 |
+| free                                                      | Muestra el uso de memoria y swap                                                                                          |
+| whereis aplicación                                        | Muestra las posibles ubicaciones de una aplicación                                                                        |
+| dd if=/dev/zero of=/tmp/salida.img bs=8k count=256k       | Crea un archivo de un tamaño determinado para probar la velocidad del disco. No usar con Veritas                          |
+| hdparm -Tt                                                | Mide la velocidad de lectura de tu disco duro                                                                             |
 
 
-Scripting de Shell:
 
-#!/bin/bash: Línea shebang para especificar el intérprete de scripts.
-$0, $1, ..., $9, ${10}, ${11}: Argumentos del script.
-if [condición]; then ... fi: Estructura de la declaración if en scripts de bash.
-for i in {1..10}; do ... done: Bucle for en scripts de bash.
-while [condición]; do ... done: Bucle while en scripts de bash.
-función nombre() {...}: Define una función.
+**Veritas:**
 
-
-Monitoreo y Rendimiento del Sistema:
-
-iostat: Informa estadísticas de la Unidad Central de Procesamiento (CPU) y estadísticas de entrada/salida para dispositivos, particiones y sistemas de archivos de red.
-vmstat: Informa información sobre procesos, memoria, paginación, E/S de bloque, trampas, discos y actividad de la CPU.
-htop: Un visor de procesos interactivo para sistemas Unix. Es una alternativa más amigable a top.
+| Comando                                                   | Descripción                                                                                                               |   
+|:----------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------|
+| hastatus -sum                                             | Ver estado de cluster                                                                                                     |
+| hagrp -online nombrecluster -sys nombreservidor           | Levantar cluster en servidor indicado                                                                                     |
+| hagrp -ofline nombrecluster -sys nombreservidor           | Desactivar cluster en servidor indicado                                                                                   |
+| hagrp -switch nombrecluster -to nombreservidor2           | Cambiar cluster de nodo                                                                                                   |
+| hares -state nombreaplicacioncluster                      |                                                                                                                           |
 
 
-Búsqueda y Encontrar:
 
-locate nombredelarchivo: Encuentra un archivo por su nombre. La base de datos se actualiza con el comando updatedb.
-whereis nombredeprograma: Localiza los archivos binarios, de origen y de página de manual para un comando.
-which nombredelcomando: Muestra la ruta completa de los comandos (shell).
+**Información del Sistema:**
 
-
-Compresión/Archivos:
-
-tar -cvf archiv.tar directorio/: Crea un archivo tar.
-tar -xvf archiv.tar: Extrae un archivo tar.
-tar -jcvf archiv.tar.bz2 directorio/: Crea un archivo bz2 comprimido.
-tar -jxvf archiv.tar.bz2: Extrae un archivo bz2 comprimido.
-
-
-Uso del Disco:
-
-dd if=/dev/zero of=/tmp/salida.img bs=8k count=256k: Crea un archivo de un tamaño determinado para probar la velocidad del disco.
-hdparm -Tt /dev/sda: Mide la velocidad de lectura de tu disco duro.
+| Comando                                                   | Descripción                                                                                                               |   
+|:----------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------|
+| date                                                      | Muestra la fecha y hora actual                                                                                            |
+| cal                                                       | Muestra el calendario del mes actual                                                                                      |
+| uptime                                                    | Muestra el tiempo de actividad actual                                                                                     |
+| w                                                         | Muestra quién está en línea                                                                                               |
+| whoami                                                    | Muestra el nombre del usuario actual                                                                                      |
+| uname -a                                                  | Muestra información del kernel                                                                                            |
+| df -h                                                     | Uso del disco en formato legible para humanos                                                                             |
+| du -sh                                                    | Uso del disco del directorio actual en formato legible para humanos                                                       |
+| free -m                                                   | Muestra la memoria libre y utilizada en MB                                                                                |
 
 
-Otros:
 
-yes > /dev/null &: Usa este comando para llevar un sistema al límite.
-:(){ :|:& };::: Una bomba: úsala con cuidado. No ejecutes este comando en un sistema de producción.
+**SELinux:**
+
+| Comando                                                         | Descripción                                                                                                               |   
+|:----------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------|
+| ausearch -m AVC,USER_AC,SELINUX_ERR,USER_SELINUX_ERR -ts recent | Muestra la fecha y hora actual                                                                                            |
+| matchpathcon -V rutadelarchivodelog                             | Muestra el calendario del mes actual                                                                                      |
+| chcon -Rv --type=nombreetiqueta rutadelarchivo                  | Muestra el tiempo de actividad actual                                                                                     |
+| semanage fcontext -a -t nombreetiqueta "rutadelarchivo"         | Muestra quién está en línea                                                                                               |
+| semanage fcontext -m -t nombreetiqueta "rutadelarchivo"         | Muestra el nombre del usuario actual                                                                                      |
+| rescorecon -v rutadelarchivo                                    | Muestra información del kernel                                                                                            |
+| ls -Z                                                           | Uso del disco en formato legible para humanos                                                                             |
+
+
+
+**Otros (principalmente utilizados en scripts):**
+
+| Comando                                                         | Descripción                                                                                                               |   
+|:----------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------|
+| comando1 ; comando2                                             | Ejecuta comando1 y luego comando2                                                                                         |
+| comando1 && comando2                                            | Ejecuta comando2 solo si comando1 es exitoso                                                                              |
+| comando1 || comando2                                            | Ejecuta comando2 solo si comando1 no es exitoso                                                                           |
+| comando &                                                       | Ejecuta el comando en segundo plano                                                                                       |
+
+
+
+**Variables de Entorno:**
+
+| Comando                                                         | Descripción                                                                                                               |   
+|:----------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------|
+| env                                                             | Muestra todas las variables de entorno                                                                                    |
+| echo $VARIABLE                                                  | Muestra el valor de una variable de entorno                                                                               |
+| export VARIABLE=valor                                           | Establece el valor de una variable de entorno                                                                             |
+| alias nuevo_comando='viejo_comando opciones'                    | Ejecuta el comando en segundo plano                                                                                       |
+| echo $PATH                                                      | Imprime la variable de entorno PATH                                                                                       |  
+| export PATH=$PATH:/nueva/ruta                                   | Agrega /nueva/ruta a la variable de entorno PATH                                                                          |
+
+
+
+**Programación de Tareas (Cron Jobs):**
+
+| Comando                                                         | Descripción                                                                                                               |   
+|:----------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------|
+| crontab -l                                                      | Lista todas tus tareas cron                                                                                               |
+| crontab -e                                                      | Edita tus tareas cron                                                                                                     |
+| crontab -r                                                      | Elimina todas tus tareas cron                                                                                             |
+| crontab -v                                                      | Muestra la última vez que editaste tus tareas cron                                                                        |
+| crontab archivo                                                 | Instala una tarea cron desde un archivo                                                                                   |  
+| @reboot comando                                                 | Programa una tarea para que se ejecute al inicio                                                                          |
+
+
+
+**Scripting de Shell:**
+
+| Comando                                                         | Descripción                                                                                                               |   
+|:----------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------|
+| #!/bin/bash                                                     | Línea shebang para especificar el intérprete de scripts                                                                   |
+| $0, $1, ..., $9, ${10}, ${11}                                   | Argumentos del script                                                                                                     |
+| if [condición]; then ... fi                                     | Estructura de la declaración if en scripts de bash                                                                        |
+| for i in {1..10}; do ... done                                   | Bucle for en scripts de bash                                                                                              |
+| while [condición]; do ... done                                  | Bucle while en scripts de bash                                                                                            |  
+| función nombre() {...}                                          | Define una función                                                                                                        |
+
+
+
+**Monitoreo y Rendimiento del Sistema:**
+
+| Comando                | Descripción                                                                                                                                                        |   
+|:-----------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| iostat                 | Informa estadísticas de la Unidad Central de Procesamiento (CPU) y estadísticas de entrada/salida para dispositivos, particiones y sistemas de archivos de red     |
+| vmstat                 | Argumentos del script                                                                                                                                              |
+| htop                   | Estructura de la declaración if en scripts de bash                                                                                                                 |
+
+
+
+**Búsqueda y Encontrar:**
+
+| Comando                                 | Descripción                                                                                                                                        |   
+|:----------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------|
+| locate nombredelarchivo                 | Encuentra un archivo por su nombre. La base de datos se actualiza con el comando updatedb                                                          |
+| whereis nombredeprograma                | Localiza los archivos binarios, de origen y de página de manual para un comando                                                                    |
+| which nombredelcomando                  | Muestra la ruta completa de los comandos (shell)                                                                                                   |
+
+
+
+**Otros:**
+
+| Comando                                 | Descripción                                                                                                                                        |   
+|:----------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------|
+| yes > /dev/null &                       | Usa este comando para llevar un sistema al límite                                                                                                  |
+| ":(){ :|:& };::"                        | Una bomba: úsala con cuidado. No ejecutes este comando en un sistema de producción                                                                 |      
+
+
 
 Recuerda que siempre puedes usar el comando man (por ejemplo, man ls) para obtener más información sobre cada comando.
