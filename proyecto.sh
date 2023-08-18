@@ -113,14 +113,14 @@ echo -n "introduce nombre del recurso: "
         read smbpublic
         echo -n "¿Permisos de escritura? (yes/no): "
         read smbwrite
-#plantilla recurso
+#plantilla de recurso compartido
 echo "
 [nombresamba]
 path=rutaabs
 public=publica
 writable=escritura
 guest ok=inv " >> /etc/samba/smb.conf
-#sustitucion de datos
+#sustituimos los datos
 sudo sed -i 's|nombresamba|'$smbname'|g' /etc/samba/smb.conf
 sudo sed -i 's|rutaabs|'$smbpath'|g' /etc/samba/smb.conf
 sudo sed -i 's|publica|'$smbpublic'|g' /etc/samba/smb.conf
